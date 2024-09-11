@@ -26,6 +26,7 @@ form.addEventListener('submit', e => {
 //small screen tabs
 let tabLinks = document.getElementsByClassName("tab-links");
 let tabContents = document.getElementsByClassName("tab-content");
+
 function opentab(tabname){
     for(tabLink of tabLinks){
         tabLink.classList.remove("active-link");
