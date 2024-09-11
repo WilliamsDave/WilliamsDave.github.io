@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Oleo+Script:wght@400;700&family=Pacifico&family=Rubik+Bubbles&family=Special+Elite&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:ital,wght@0,400..900;1,400..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playwrite+NG+Modern:wght@100..400&display=swap');
+
 
 *{
     margin: 0;
@@ -19,7 +21,7 @@ body{
     position: relative;
     width: 100%;
     min-height: 100vh;
-    background: url(public/images/Background.jpg) no-repeat;
+    background-color: #0f539c;
     background-size: cover;
     background-position: center;
     display: flex;
@@ -27,27 +29,56 @@ body{
     align-items: center;
 }
 #landing h1{
-    color: black;
+    color: white;
     font-size: 60px;
     font-weight: 800;
     letter-spacing: 2px;
-    margin-top: 40vh;
+    margin-top: 35vh;
 
 }
 #landing h1 span{
-    color: rgb(35, 128, 250);
+    color: rgb(219, 216, 44);
+    font-size: 75;
     
 }
 #landing p{
-    color: black;
-    font-size: 30px;
-    font-weight: 600;
-
+    color: white;
+    font-size: 25px;
+    font-weight: 400;
+    margin-top: 5px;
 }
 #landing i{
-    margin-top: 35vh;
     font-size: 40px;
-    color: black
+    color: white
+}
+#landing .social-icons{
+    margin: 0;
+}
+#landing .social-icons i:hover{
+    color:rgb(219, 216, 44);
+}
+#landing .btn.btn2{
+    background-color: #0f539c;
+    display:block;
+    border: 2px solid rgb(219, 216, 44);
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: rgb(219, 216, 44);
+    transition: .2s;
+    margin: 40px 0px 20px 0px;
+}
+#landing .btn2:hover{
+    background-color: rgb(219, 216, 44);
+    color: black;
+}
+#downbtn{
+    margin-top: 30vh;
+}
+#downbtn i:hover{
+    color: rgb(219, 216, 44);
+    transform: scale(1.2) translateY(2px);
+    transition: transform .5s ease-in-out;
 }
 header{
     width: 100%;
@@ -58,19 +89,19 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 50px;
+    padding: 15px 50px;
     transition: 1s;
+    box-shadow: 0 5px 10px rgba(49, 49, 51, 0.05), 0 15px 40px rgba(23, 23, 24, 0.2);
 }
 header.sticky{
-    background-color: #5858587e;
+    background-color: #0f539c;
 }
+
 .logo{
     color: #fff;
     font-size: 20px;
-    font-weight: 900;
-    text-transform: uppercase;
-    letter-spacing: -5px;
-    font-family: "Playwrite NG Modern", serif;
+    letter-spacing: 2px;
+    font-weight: 400;
     text-shadow: rgb(0, 0, 0) 2px 2px 5px;
 }
 header nav{
@@ -81,7 +112,7 @@ header nav{
 nav ul li{
     display: inline-block;
     list-style: none;
-    margin: 10px 20px;
+    margin: 10px 10px;
 }
 nav ul li a{
     color: rgb(255, 255, 255);
@@ -95,7 +126,7 @@ nav ul li a::after{
     content: '';
     width: 0;
     height: 3px;
-    background-color: rgb(35, 128, 250);
+    background-color: rgb(219, 216, 44);
     position: absolute;
     left:0px;
     bottom:-6px;
@@ -107,9 +138,10 @@ nav ul li a:hover::after{
 
 /* about */
 #about{
-    padding: 100px 10% 10%;
-    color: #ababab;
+    padding: 10% 10% 15%;
+    color: black;
 }
+
 .row{
     display: flex;
     justify-content: space-between;
@@ -129,7 +161,7 @@ nav ul li a:hover::after{
 .subtitle{
     font-size: 60px;
     font-weight: 600;
-    color: rgb(35, 128, 250);
+    color: #0f539c
 }
 .tab-titles{
     display: flex;
@@ -146,7 +178,7 @@ nav ul li a:hover::after{
     content: '';
     width: 0;
     height: 3px;
-    background-color: rgb(35, 128, 250);
+    background-color: #0f539c;
     position: absolute;
     left: 0;
     bottom: -8px;
@@ -162,7 +194,7 @@ nav ul li a:hover::after{
 }
 
 .tab-content ul li span{
-    color:rgb(35, 128, 250);
+    color:#0f539c;
     font-size: 14px;
     font-weight: 700;
 }
@@ -175,8 +207,7 @@ nav ul li a:hover::after{
 
 /*portfolio*/
 #portfolio{
-    padding: 100px 10% 10%;
-    background-color: rgb(120, 164, 223);
+    padding: 0px 10% 10%;
 }
 #portfolio .subtitle{
     color: #2b2b2c;
@@ -204,7 +235,7 @@ nav ul li a:hover::after{
 .layer{
     width: 100%;
     height: 0%;
-    background: linear-gradient(rgba(85, 84, 84, 0.6), rgb(192, 193, 194));
+    background: linear-gradient(rgba(168, 166, 166, 0.6), rgb(192, 193, 194));
     border-radius: 10px;
     position:absolute;
     left: 0;
@@ -248,19 +279,28 @@ nav ul li a:hover::after{
 }
 .btn{
     display:block;
-    margin: 50px auto;
     width: fit-content;
-    border: 2px solid rgb(35, 128, 250);
-    box-shadow: 1px 1px 5px rgb(0, 0, 0);
+    border: 1px solid #0f539c;
+    background-color: #0f539c;
     padding: 14px 50px;
     border-radius: 6px;
     text-decoration: none;
     color: white;
     transition: .2s;
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.05), 0px 3px 6px rgba(0, 0, 0, 0.5);
 }
 .btn:hover{
-    background: rgb(35, 128, 250);
+    background: white;
+    color: black;
 }
+.project-more {
+    text-align: center; 
+    margin-top: 30px; 
+}
+.project-more .btn{
+   display: inline-block;
+}
+
 /*contact*/
 #contact{
     padding: 100px 10% 10%;
@@ -279,7 +319,7 @@ nav ul li a:hover::after{
 
 }
 .contact-left p i{
-    color:rgb(35, 128, 250);
+    color:#0f539c;
     margin-right: 15px;
     font-size: 25px;
 }
@@ -296,13 +336,13 @@ nav ul li a:hover::after{
     
 }
 .social-icons a:hover{
-    color:rgb(35, 128, 250);
+    color:#0f539c;
     transform: scale(1.2) translateY(-5px);
 }
 
 .btn.btn2{
+    margin: 50px auto;
     display: inline-block;
-    background:rgb(35, 128, 250);
 }
 .contact-right form{
     width: 100%;
@@ -319,6 +359,7 @@ form input, form textarea{
     border-radius: 6px ;
 }
 form .btn2{
+    
     padding:14px 60px;
     font-size: 18px;
     margin-top: 20px;
@@ -328,11 +369,11 @@ form .btn2{
 .copyright{
     width: 100%;
     text-align: center;
-    padding: 18px 0;
-    background: rgb(75, 72, 72);
+    padding: 10px 0;
+    background-color: #0f539c;
     font-weight: 200;
     margin-top: 20px;
-    color:#888484
+    color: rgb(226, 226, 226);
 }
 
 
@@ -362,6 +403,7 @@ nav .fas{
     nav .fas{
         display: block;
         font-size: 25px;
+        cursor:pointer;
     }
     #sidebar{
         background: #41403f;
