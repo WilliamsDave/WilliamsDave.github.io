@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="public/images/logo.png" class="logo">
+            <ul id="sidebar">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-regular fa-circle-xmark" onclick="closeMenu()"></i>
+            </ul>
+            <i class="fas fa-solid fa-bars" onclick="openMenu()"></i>
+        </nav>
+        
+    </div>
+</div>
+<div class="container">
+    <div class="header-text">
+        <p>Software Developer</p>
+        <h1>Hello, I am <span>David</span></h1>
+    </div>
+</div>
+<!--about-->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="public/images/user.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="subtitle">About Me</h1>
+                <p>testatjdsif jlkjf klasjdf kldghj lkdjcvlks dcmslkvnkljefh klasj ncvxkmnvcSEK:J fbskdjvnklejfb sauioFHoIEFHJL:JKFLKFJ lkdjflnmcvEIjtestatjdsif jlkjf klasjdf kldghj lkdjcvlks dcmslkvnkljefh klasj ncvxkmnvcSEK:J fbskdjvnklejfb sauioFHoIEFHJL:JKFLKFJ lkdjflnmcvEIjtestatjdsif jlkjf klasjdf kldghj lkdjcvlks dcmslkvnkljefh klasj ncvxkmnvcSEK:J fbskdjvnklejfb sauioFHoIEFHJL:JKFLKFJ lkdjflnmcvEIj</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+
+                </div>
+                <div class="tab-content active-tab" id="skills">
+                    <ul>
+                        <li><span>Java</span><br>YapYap Yapv  YapYapYapYap  Yap Yap</li>
+                        <li><span>Web Development</span><br>YapYap Yapv  YapYapYapYap  Yap YapYapYap Yapv  YapYapYapYap  Yap Yap</li>
+                        <li><span>C++</span><br>YapYap Yapv  YapYapYapYap  Yap Yapap Yapap Yapap Yap</li>
+                    </ul>
+                </div>
+                <div class="tab-content" id="experience">
+                    <ul>
+                        <li><span>2021 - Current</span><br>Server at Blackrock Bar and Grill</li>
+                    </ul>
+                </div>
+                <div class="tab-content" id="education">
+                    <ul>
+                        <li><span>2021 - 2023</span><br>Associate's in Programming from Schoolcraft College</li>
+                        <li><span>2023 - Current</span><br>Bachelor's in Computer Science from Eastern Michigan University</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--portfolio-->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="subtitle">My Projects</h1>
+        <div class="project-list">
+            <div class="project">
+                <img src="public/images/work-1.png">
+                <div class="layer">
+                    <h3>Project 1 Examples</h3>
+                    <p>Put the description of the project here</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="project">
+                <img src="public/images/work-2.png">
+                <div class="layer">
+                    <h3>Project 2 Examples</h3>
+                    <p>Put the description of the project here</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="project">
+                <img src="public/images/work-3.png">
+                <div class="layer">
+                    <h3>Project 3 Examples</h3>
+                    <p>Put the description of the project here</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+
+<!--contact-->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="subtitle">Contact Me</h1>
+                <p><i class="fa-solid fa-envelope"></i>david@daviddev.net</p>
+                <p><i class="fa-solid fa-phone"></i>0123456789</p>
+                <div class="social-icons">
+                    <a href="https://github.com/WilliamsDave"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/davidwillliamsdev/"><i class="fa-brands fa-linkedin"></i></i></a>
+                </div>
+                <a href="public/images/DavidWilliamsResume.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message"  rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © David Williams</p>
+    </div>
+</div>
+
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyoKHURe9CcGRWWN-FAzv0u8av6zonotSueuB9p0Y80HMrrw34xO1mb5hezfYX7EgK-/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg");
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent, thank you!";
+            setTimeout(function(){
+                msg.innerHTML = "";
+            },5000)
+            form.reset();
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+<script>
+    let tabLinks = document.getElementsByClassName("tab-links");
+    let tabContents = document.getElementsByClassName("tab-content");
+    function opentab(tabname){
+        for(tabLink of tabLinks){
+            tabLink.classList.remove("active-link");
+        }
+        for(tabContent of tabContents){
+            tabContent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+<script>
+    let sidebar = document.getElementById("sidebar");
+
+    function openMenu(){
+        sidebar.style.right = "0";
+    }
+    function closeMenu(){
+        sidebar.style.right = "-200px";
+    }
+</script>
+<script src="https://kit.fontawesome.com/e59125f2c5.js" crossorigin="anonymous"></script>
+</body>
+</html>
