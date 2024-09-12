@@ -73,7 +73,7 @@ body{
     color: black;
 }
 #downbtn{
-    margin-top: 30vh;
+    margin-top: 20vh;
 }
 #downbtn i:hover{
     color: rgb(219, 216, 44);
@@ -119,7 +119,7 @@ nav ul li a{
     text-decoration: none;
     font-size: 18px;
     position: relative;
-    text-shadow: rgb(0, 0, 0) -2px 2px 5px;
+
 }
 
 nav ul li a::after{
