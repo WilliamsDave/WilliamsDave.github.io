@@ -396,8 +396,10 @@ nav .fas{
         font-weight: 800;
     }
     #landing p{
+        text-align: center;
         font-size: 25px;
         font-weight: 600;
+        padding: 0 10vh 0 10vh;
     }
     
     nav .fas{
@@ -406,12 +408,15 @@ nav .fas{
         cursor:pointer;
     }
     #sidebar{
-        background: #41403f;
+        background: #0f539c;
+        border: 1px solid white;
+        border-radius: 10px;
+        box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.05), 0px 3px 6px rgba(0, 0, 0, 0.5);
         position: fixed;
         top:0;
         right: -200px;
-        width: 200px;
-        height: 100vh;
+        width: 150px;
+        height: 45vh;
         padding-top: 50px;  
         z-index: 2;
         transition: right .5s;
@@ -432,8 +437,14 @@ nav .fas{
     nav ul .fas{
         position: absolute;
         top: 25px;
-        left: 25px;
+        right: 25px;
         cursor: pointer;
+        color: white;
+
+    }
+    nav ul .fas:hover{
+
+        color: rgb(219, 216, 44);
 
     }
     .subtitle{
@@ -445,6 +456,7 @@ nav .fas{
     }
     .about-col-1{
         margin-bottom: 30px;
+        margin-top: 25px;
     }
     .about-col-2{
         font-size: 14px;
