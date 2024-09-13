@@ -6,6 +6,7 @@
     padding: 0;
     font-family: "Schibsted Grotesk", sans-serif;
     box-sizing: border-box;
+    font-weight: 500;
 }
 
 .btn {
@@ -175,16 +176,19 @@ nav ul li a:hover::after {
     padding: 10% 10% 0 10%;
     color: black;
 }
-.swiper{
+
+.swiper {
     width: 80%;
     height: fit-content;
     --swiper-pagination-color: white;
     --swiper-navigation-color: white;
 }
-.swiper-slide img{
+
+.swiper-slide img {
     width: 100%;
     border-radius: 15px;
 }
+
 .row {
     display: flex;
     justify-content: space-between;
@@ -253,6 +257,23 @@ nav ul li a:hover::after {
 
 .tab-content.active-tab {
     display: block;
+}
+.techstack{
+    display: flex;
+    gap: 10px;
+    font-size: 15px;
+
+}
+.techstack li{
+    width: 12vh;
+    text-align: center;
+    font-weight: 500;
+    padding: 8px;
+    color: white;
+    background-color: #0f539c;
+    border-radius: 18px;
+    box-shadow: 5px 5px 0 0 rgba(186, 228, 0, 0.5);
+    
 }
 
 /*projects*/
