@@ -7,6 +7,7 @@
     font-family: "Schibsted Grotesk", sans-serif;
     box-sizing: border-box;
     font-weight: 500;
+    overflow: hidden;
 }
 
 .btn {
@@ -197,21 +198,17 @@ nav ul li a:hover::after {
 }
 
 .row {
-    display: flex;
     justify-content: space-between;
+    display: flex;
     flex-wrap: wrap;
+    gap: 20px;
 }
 
-.about-col-1 {
-    flex: 1 1 35%; 
-    min-width: 200px; 
-}
-
+.about-col-1,
 .about-col-2 {
-    flex: 1 1 60%; 
-    min-width: 300px;
+    flex: 1 1 auto; 
+    min-width: 100%; 
 }
-
 .subtitle {
     font-size: 60px;
     font-weight: 800;
@@ -225,6 +222,7 @@ nav ul li a:hover::after {
 }
 
 .tab-links {
+    flex: 1 1 auto; 
     margin-right: 50px;
     font-size: 18px;
     font-weight: 500;
@@ -579,7 +577,7 @@ nav .fas {
 
     .about-col-1,
     .about-col-2 {
-        flex-basis: 100%;
+        flex: 100%; 
     }
 
     .about-col-1 {
