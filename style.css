@@ -527,6 +527,11 @@ nav .fas {
         font-weight: 600;
         padding: 0 10vh 0 10vh;
     }
+    #landing h1 span {
+        font-size: 40px;
+        font-weight: 800;
+    
+    }
 
     nav .fas {
         display: block;
