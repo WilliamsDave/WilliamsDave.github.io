@@ -60,7 +60,8 @@ body {
 
 #landing h1 span {
     color: rgb(219, 216, 44);
-    font-size: 75;
+    font-size: 75px;
+    font-weight: 800;
 
 }
 
@@ -223,7 +224,7 @@ nav ul li a:hover::after {
     font-size: 60px;
     font-weight: 800;
     letter-spacing: 1px;
-    color: #0f539c
+    color: #0f539c;
 }
 
 .tab-titles {
