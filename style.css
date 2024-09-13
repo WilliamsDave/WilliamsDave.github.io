@@ -203,12 +203,13 @@ nav ul li a:hover::after {
 }
 
 .about-col-1 {
-    flex-basis: 35%;
+    flex: 1 1 35%; 
+    min-width: 200px; 
 }
 
 .about-col-2 {
-    flex-basis: 60%;
-
+    flex: 1 1 60%; 
+    min-width: 300px;
 }
 
 .subtitle {
