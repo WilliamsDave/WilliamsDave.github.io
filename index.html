@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Website</title>
     <link rel="stylesheet" type="text/css" href="style.css">
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
 </head>
-<body> 
-    <header>   
+
+<body>
+    <header>
         <div class="logo">David Williams</div>
         <nav>
             <ul id="sidebar">
-                <li><a class='navLink' href="#landing" >Home</a></li>
+                <li><a class='navLink' href="#landing">Home</a></li>
                 <li><a class='navLink' href="#about">About</a></li>
                 <li><a class='navLink' href="#portfolio">Portfolio</a></li>
                 <li><a class='navLink' href="#contact">Contact</a></li>
@@ -24,155 +26,179 @@
     </header>
 
 
-<section id="landing">
-    <h1>Hi, I am <span>David</span></h1>
-    <p>Computer Science Student @ EMU</p>
-    <a href="public/images/DavidWilliamsResume.pdf" download class="btn btn2">Checkout My Resume</a>
-    <div class="social-icons">
-        <a href="https://github.com/WilliamsDave" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a>
-        <a href="https://www.linkedin.com/in/davidwillliamsdev/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i></i></a>
-    </div>     
-    
-    <div id="downbtn">
-    <a href="#about"><i class="fa-solid fa-angle-down"></i></a>
-    </div>
-</section>
+    <section id="landing">
+        <h1>Hi, I am <span>David</span></h1>
+        <p>Computer Science Student @ EMU</p>
+        <a href="public/images/DavidWilliamsResume.pdf" download class="btn btn2">Checkout My Resume</a>
+        <div class="social-icons">
+            <a href="https://github.com/WilliamsDave" target="_blank" rel="noopener noreferrer"><i
+                    class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/davidwillliamsdev/" target="_blank" rel="noopener noreferrer"><i
+                    class="fa-brands fa-linkedin"></i></i></a>
+        </div>
+
+        <div id="downbtn">
+            <a href="#about"><i class="fa-solid fa-angle-down"></i></a>
+        </div>
+    </section>
 
 
 
-<!--about-->
-<section id="about">
-    <div class="container">
-        <div class="row">
-            <div class="about-col-1">
-                <img src="public/images/Background.jpg">
-            </div>
-            <div class="about-col-2">
-                <h1 class="subtitle">About Me</h1>
-                <p>Hi, I’m David, a passionate Computer Science student with a strong desire to learn and a drive to innovate.
-                     Currently pursuing my B.S. at Eastern Michigan University,
-                     Looking for oppurtunites to hone my skills in Programming, problem-solving, and collaborative project development.<br><br>
-                    I also train in Jiu-Jitsu, enjoy cooking, and love anything outdoors</p>
-                <div class="tab-titles">
-                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                    <p class="tab-links" onclick="opentab('education')">Education</p>
-                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+    <!--about-->
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img src="public/images/marathon.jpg"></div>
+                            <div class="swiper-slide"><img src="public/images/wedding.jpg"></div>
+                            <div class="swiper-slide"><img src="public/images/hocking.jpg"></div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
 
+                    
                 </div>
-                <div class="tab-content active-tab" id="skills">
-                    <ul>
-                        <li><span>Java</span><br>Blah Blah blah blah</li>
-                        <li><span>Web Development</span><br>Blah Blah blah blahBlah Blah blah blahBlah Blah blah blah</li>
-                        <li><span>C++</span><br>Blah Blah blah blahBlah Blah blah blah</li>
-                    </ul>
-                </div>
-                <div class="tab-content" id="experience">
-                    <ul>
-                        <li><span>2021 - Current</span><br>Server at Blackrock Bar and Grill</li>
-                    </ul>
-                </div>
-                <div class="tab-content" id="education">
-                    <ul>
-                        <li><span>2023 - Current</span><br>Bachelor's in Computer Science from Eastern Michigan University - 4.0</li>
-                        <li><span>2021 - 2023</span><br>Associate's in Programming from Schoolcraft College - 3.9+</li>
-                    </ul>
+                <div class="about-col-2">
+                    <h1 class="subtitle">About Me</h1>
+                    <p>Hi, I’m David, a passionate Computer Science student with a strong desire to learn and a drive to
+                        innovate.
+                        Currently pursuing my B.S. at Eastern Michigan University,
+                        Looking for oppurtunites to hone my skills in Programming, problem-solving, and collaborative
+                        project development.<br><br>
+                        I also train in Jiu-Jitsu, enjoy cooking, and love anything outdoors</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+
+                    </div>
+                    <div class="tab-content active-tab" id="skills">
+                        <ul>
+                            <li><span>Java</span><br>Blah Blah blah blah</li>
+                            <li><span>Web Development</span><br>Blah Blah blah blahBlah Blah blah blahBlah Blah blah
+                                blah</li>
+                            <li><span>C++</span><br>Blah Blah blah blahBlah Blah blah blah</li>
+                        </ul>
+                    </div>
+                    <div class="tab-content" id="experience">
+                        <ul>
+                            <li><span>2021 - Current</span><br>Server at Blackrock Bar and Grill</li>
+                        </ul>
+                    </div>
+                    <div class="tab-content" id="education">
+                        <ul>
+                            <li><span>2023 - Current</span><br>Bachelor's in Computer Science from Eastern Michigan
+                                University - 4.0</li>
+                            <li><span>2021 - 2023</span><br>Associate's in Programming from Schoolcraft College - 3.9+
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
-<!--portfolio-->
-<section id="portfolio">
-    <h1 class="subtitle">Projects</h1>
-    <div class="projects">
-        <article>
-            <figure>
-                <img src="public/images/Portfolio1.PNG" alt="portfolio website photo" width="100%">
-                <figcaption>
-                    <a href="https://github.com/WilliamsDave" target="_blank" rel="noopener noreferrer" >Live Demo</a>
-                    <a href="https://github.com/WilliamsDave" target="_blank" rel="noopener noreferrer" >Learn More</a>
-                </figcaption>
-            </figure>
-            <h2>Portfolio Website</h2>
-            <p>The website you're currently browsing. Made with vanilla HTML, CSS, and Javascript</p>
-            <div class="technologies">
-                <i class="fa-brands fa-html5"></i>
-                <i class="fa-brands fa-css3-alt"></i>
-                <i class="fa-brands fa-js"></i>
-            </div>
-        </article>
-        <article>
-            <figure>
-                <img src="public/images/work-1.png" alt="portfolio website photo" width="100%">
-                <figcaption>
-                    <a href="https://github.com/WilliamsDave" target="_blank" rel="noopener noreferrer" >Live Demo</a>
-                    <a href="https://github.com/WilliamsDave" target="_blank" rel="noopener noreferrer" >Learn More</a>
-                </figcaption>
-            </figure>
-            <h2>Portfolio Website</h2>
-            <p>The website you're currently browsing. Made with vanilla HTML, CSS, and Javascript</p>
-            <div class="technologies">
-                <i class="fa-brands fa-html5"></i>
-                <i class="fa-brands fa-css3-alt"></i>
-                <i class="fa-brands fa-js"></i>
-            </div>
-        </article>
-        <article>
-            <figure>
-                <img src="public/images/Portfolio.PNG" alt="portfolio website photo" width="100%">
-                                <figcaption>
-                    <a href="https://github.com/WilliamsDave" target="_blank" rel="noopener noreferrer" >Live Demo</a>
-                    <a href="https://github.com/WilliamsDave" target="_blank" rel="noopener noreferrer" >Learn More</a>
-                </figcaption>
-            </figure>
-            <h2>Portfolio Website</h2>
-            <p>The website you're currently browsing. Made with vanilla HTML, CSS, and Javascript</p>
-            <div class="technologies">
-                <i class="fa-brands fa-html5"></i>
-                <i class="fa-brands fa-css3-alt"></i>
-                <i class="fa-brands fa-js"></i>
-            </div>
-        </article>
-    </div>
-    <div class="project-more">
-        <a href="#" class="btn">See more</a>
-    </div>
-    
-</section>
-
-<!--contact-->
-<section id="contact">
-    <div class="container">
-        <div class="row">
-            <div class="contact-left">
-                <h1 class="subtitle">Contact Me</h1>
-                <p><i class="fa-solid fa-envelope"></i>david@daviddev.net</p>
-                <p><i class="fa-solid fa-phone"></i>0123456789</p>
-                <div class="social-icons">
-                    <a href="https://github.com/WilliamsDave"target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a>
-                    <a href="https://www.linkedin.com/in/davidwillliamsdev/"target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i></a>
+    </section>
+    <!--portfolio-->
+    <section id="portfolio">
+        <h1 class="subtitle">Projects</h1>
+        <div class="projects">
+            <article>
+                <figure>
+                    <img src="public/images/Portfolio1.PNG" alt="portfolio website photo" width="100%">
+                    <figcaption>
+                        <a href="https://github.com/WilliamsDave" target="_blank" rel="noopener noreferrer">Live
+                            Demo</a>
+                        <a href="https://github.com/WilliamsDave" target="_blank" rel="noopener noreferrer">Learn
+                            More</a>
+                    </figcaption>
+                </figure>
+                <h2>Portfolio Website</h2>
+                <p>The website you're currently browsing. Made with vanilla HTML, CSS, and Javascript</p>
+                <div class="technologies">
+                    <i class="fa-brands fa-html5"></i>
+                    <i class="fa-brands fa-css3-alt"></i>
+                    <i class="fa-brands fa-js"></i>
                 </div>
-                <a href="public/images/DavidWilliamsResume.pdf" download class="btn btn2">Download CV</a>
-            </div>
-            <div class="contact-right">
-                <form name="submit-to-google-sheet">
-                    <input type="text" name="Name" placeholder="Your Name" required>
-                    <input type="email" name="email" placeholder="Your Email" required>
-                    <textarea name="Message"  rows="6" placeholder="Your Message"></textarea>
-                    <button type="submit" class="btn btn2">Submit</button>
-                </form>
-                <span id="msg"></span>
-            </div>
-
+            </article>
+            <article>
+                <figure>
+                    <img src="public/images/work-1.png" alt="portfolio website photo" width="100%">
+                    <figcaption>
+                        <a href="https://github.com/WilliamsDave" target="_blank" rel="noopener noreferrer">Live
+                            Demo</a>
+                        <a href="https://github.com/WilliamsDave" target="_blank" rel="noopener noreferrer">Learn
+                            More</a>
+                    </figcaption>
+                </figure>
+                <h2>Portfolio Website</h2>
+                <p>The website you're currently browsing. Made with vanilla HTML, CSS, and Javascript</p>
+                <div class="technologies">
+                    <i class="fa-brands fa-html5"></i>
+                    <i class="fa-brands fa-css3-alt"></i>
+                    <i class="fa-brands fa-js"></i>
+                </div>
+            </article>
+            <article>
+                <figure>
+                    <img src="public/images/Portfolio.PNG" alt="portfolio website photo" width="100%">
+                    <figcaption>
+                        <a href="https://github.com/WilliamsDave" target="_blank" rel="noopener noreferrer">Live
+                            Demo</a>
+                        <a href="https://github.com/WilliamsDave" target="_blank" rel="noopener noreferrer">Learn
+                            More</a>
+                    </figcaption>
+                </figure>
+                <h2>Portfolio Website</h2>
+                <p>The website you're currently browsing. Made with vanilla HTML, CSS, and Javascript</p>
+                <div class="technologies">
+                    <i class="fa-brands fa-html5"></i>
+                    <i class="fa-brands fa-css3-alt"></i>
+                    <i class="fa-brands fa-js"></i>
+                </div>
+            </article>
         </div>
-    </div>
-</section>
-<section class="copyright">
-    <p>© David Williams</p>
-</section>
-<script src="scripts.js"></script>
-<script src="https://kit.fontawesome.com/e59125f2c5.js" crossorigin="anonymous"></script>
+        <div class="project-more">
+            <a href="#" class="btn">See more</a>
+        </div>
+
+    </section>
+
+    <!--contact-->
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="subtitle">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i>david@daviddev.net</p>
+                    <p><i class="fa-solid fa-phone"></i>0123456789</p>
+                    <div class="social-icons">
+                        <a href="https://github.com/WilliamsDave" target="_blank" rel="noopener noreferrer"><i
+                                class="fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/davidwillliamsdev/" target="_blank"
+                            rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="public/images/DavidWilliamsResume.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section class="copyright">
+        <p>© David Williams</p>
+    </section>
+    <script src="scripts.js"></script>
+    <script src="https://kit.fontawesome.com/e59125f2c5.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </body>
-
-
-    
